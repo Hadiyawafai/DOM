@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="heading">
+        <h1>Task Manager</h1>
+    </header>
+    <br/>
+    <br/>
+
+     <div >
+        <button class="dark" id="dark">Dark</button>
+        <button class="light" id="light">Light</button>
+     </div>
+
+    <form class="add-task">
+        <h2>Add Task</h2>
+
+        <label for="add-task-title">Task Title:</label>
+        <input type="text" id="add-task-title" placeholder="Enter Title">
+
+        <br />
+        <br/>
+
+        <label for="add-task-description">Task Description:</label>
+        <input type="text" id="add-task-description" placeholder="Enter Description">
+
+        <br />
+        <br />
+
+        <label for="add-task-priority">Priority:</label>
+        <input type="checkbox" id="add-task-priority">
+        <label>Yes</label>
+
+        <br />
+        <br />
+
+        <label for="add-task-date">Due Date:</label>
+        <input type="date" id="add-task-date">
+
+        <br />
+        <br />
+
+        <button type="submit" class="add-submit" id="add-submit-btn">submit</button>
+    </form>
+
+    <section class="pending-task">
+        <h1>Pending tasks</h1>
+        <div id="pending-tasks"></div>
+    </section>
+
+    <section class="completed-task">
+        <h1>Completed tasks</h1>
+        <div id="completed-tasks"></div>
+    </section>
+
+    <footer>
+        <p class="footer">&copy;2026</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

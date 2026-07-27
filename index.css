@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: beige;
+    color: brown;
+    border: 2px solid brown;
+}
+
+/* Dark & Light Buttons */
+
+div .dark,
+div .light {
+    width: 70px;
+    height: 30px;
+    background-color: brown;
+    color: beige;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+div .dark {
+    margin-left: 100px;
+}
+
+div .light {
+    margin-left: 20px;
+}
+
+div .dark:hover,
+div .light:hover {
+    background-color: rgb(146, 63, 63);
+}
+
+/* Add Task Form */
+
+.add-task {
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 18px;
+}
+
+.add-task button {
+    width: 120px;
+    height: 35px;
+    background-color: brown;
+    color: beige;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.add-task button:hover {
+    background-color: rgb(146, 63, 63);
+}
+
+/* Pending Tasks */
+
+.pending-task {
+    margin-left: 100px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 18px;
+}
+
+/* Completed Tasks */
+
+.completed-task {
+    margin-left: 100px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 18px;
+}
+
+/* Task Card */
+
+.task {
+    width: 400px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.task button {
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: brown;
+    color: beige;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.task button:hover {
+    background-color: rgb(146, 63, 63);
+}
+
+/* Footer */
+
+.footer {
+    height: 50px;
+    width: 100%;
+    border: 2px solid brown;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
