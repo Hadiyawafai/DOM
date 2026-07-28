@@ -40,7 +40,7 @@ function displayTask() {
         taskDiv.className = "task"
 
         const title = document.createElement("h3")
-        title.innerText = "title"+ task.title
+        title.innerText = "title:"+ task.title
 
         const description = document.createElement("p")
         description.innerText = "Description: " + task.description;
@@ -50,12 +50,10 @@ function displayTask() {
 
         const dueDate = document.createElement("p");
         dueDate.innerText = task.dueDate
-
         taskDiv.appendChild(title);
         taskDiv.appendChild(description);
         taskDiv.appendChild(priority);
         taskDiv.appendChild(dueDate);
-
         if (task.completed) {
 
             const completeTask = document.createElement("h2");
@@ -84,14 +82,13 @@ function displayTask() {
             taskDiv.appendChild(editBtn);
             taskDiv.appendChild(deleteBtn);
             taskDiv.appendChild(completeBtn);
-
             pendingTask.appendChild(taskDiv);
         }
 
     });
 
 }
-pendingTask.addEventListener('click',function(){
+pendingTask.addEventListener('click',function(e){
     if(e.target.tagName === "BUTTON"){
           const action = e.target.dataset.action;
         const index = Number(e.target.dataset.index);
@@ -119,7 +116,7 @@ let id=null;
 taskSubmit.addEventListener("click", function (e) {
 
     e.preventDefault();
-    if(taskInput.value.length>5){
+    if(taskInput.value.length<5){
         alert("more than 5 chars are allowed")
          return;
     }
