@@ -11,67 +11,95 @@ body {
     height: 70px;
     font-family: 'Times New Roman', Times, serif;
     background-color: beige;
-    color: brown;
-    border: 2px solid brown;
+    color: rgb(77, 21, 21);
+    border: 2px solid rgb(77, 21, 21);
+}
+@media (max-width:768px) {
+    .heading{
+        height: 30px;
+    }
 }
 
 /* Dark & Light Buttons */
-
-div .dark,
-div .light {
+#toggleBtn{
     width: 70px;
     height: 30px;
-    background-color: brown;
+    background-color: rgb(77, 21, 21);
     color: beige;
     font-size: 20px;
     border: 2px solid black;
     border-radius: 10%;
-}
-
-div .dark {
     margin-left: 100px;
 }
-
-div .light {
-    margin-left: 20px;
+@media (max-width:768px){
+    #toggleBtn{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        margin-left: 50px;
+    }
 }
 
-div .dark:hover,
-div .light:hover {
-    background-color: rgb(146, 63, 63);
+.darkBg{
+  background-color: black;
 }
-
-/* Add Task Form */
+.darkColor{
+    color: beige;
+}
 
 .add-task {
     margin-left: 100px;
     font-family: 'Times New Roman', Times, serif;
-    color: brown;
+    color: rgb(77, 21, 21);
     font-size: 18px;
+}
+@media (max_width:768px){
+    .add-task{
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(77, 21, 21);
+    font-size: 12px;
+    }
 }
 
 .add-task button {
     width: 120px;
     height: 35px;
-    background-color: brown;
+    background-color: rgb(77, 21, 21);
     color: beige;
     font-size: 20px;
     border: 2px solid black;
     border-radius: 10%;
 }
-
+ @media (max-width:768px){
+    .add-task button {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+ }
 .add-task button:hover {
-    background-color: rgb(146, 63, 63);
+    background-color: rgb(77, 21, 21);
 }
 
-/* Pending Tasks */
 
 .pending-task {
     margin-left: 100px;
     margin-top: 40px;
     font-family: 'Times New Roman', Times, serif;
-    color: brown;
+    color: rgb(77, 21, 21);
     font-size: 18px;
+}
+@media (max-width:768px){
+    .pending-task {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(77, 21, 21);
+    font-size: 12px;
+}
 }
 
 /* Completed Tasks */
@@ -80,37 +108,65 @@ div .light:hover {
     margin-left: 100px;
     margin-top: 40px;
     font-family: 'Times New Roman', Times, serif;
-    color: brown;
+    color: rgb(77, 21, 21);
     font-size: 18px;
 }
 
-/* Task Card */
-
+@media (max-width:768px){
+    .completed-task {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(77, 21, 21);
+    font-size: 12px;
+}
+}
 .task {
     width: 400px;
     padding: 15px;
     margin-top: 20px;
-    border: 2px solid brown;
+    border: 2px solid rgb(77, 21, 21);
     border-radius: 10px;
     background-color: white;
+}
+@media (max-width:768px){
+    .task {
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(77, 21, 21);
+    border-radius: 10px;
+    background-color: white;
+}
 }
 
 .task button {
     width: 100px;
     height: 35px;
     margin-right: 10px;
-    background-color: brown;
+    background-color: rgb(77, 21, 21);
+    color: beige;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .task button {
+    width: 50px;
+    height: 20px;
+    margin-right: 5px;
+    background-color: rgb(77, 21, 21);
     color: beige;
     border: 2px solid black;
     border-radius: 8px;
     cursor: pointer;
 }
 
+}
+
 .task button:hover {
     background-color: rgb(146, 63, 63);
 }
-
-/* Footer */
 
 .footer {
     height: 50px;
@@ -123,4 +179,19 @@ div .light:hover {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+@media (max-width:768px){
+    .footer {
+    height: 25px;
+    width: 100%;
+    border: 2px solid brown;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
 }
