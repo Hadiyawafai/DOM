@@ -33,10 +33,11 @@ body {
 }
 @media (max-width:768px){
     #toggleBtn{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         font-size: 12px;
-        margin-left: 50px;
+        margin: 10px auto;
+        display: block;
     }
 }
 
@@ -53,7 +54,7 @@ body {
     color: rgb(77, 21, 21);
     font-size: 18px;
 }
-@media (max_width:768px){
+@media (max-width:768px){
     .add-task{
     margin-left: 50px;
     font-family: 'Times New Roman', Times, serif;
@@ -102,7 +103,9 @@ body {
 }
 }
 
-.completed-tasks {
+/* Completed Tasks */
+
+.completed-task {
     margin-left: 100px;
     margin-top: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -163,15 +166,15 @@ body {
 }
 
 .task button:hover {
-    background-color: rgb(63, 13, 13);;
+    background-color: rgb(146, 63, 63);
 }
 
 .footer {
     height: 50px;
     width: 100%;
-    border: 2px solid rgb(63, 13, 13);;
+    border: 2px solid brown;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(63, 13, 13);;
+    color: brown;
     font-size: 25px;
     display: flex;
     justify-content: center;
